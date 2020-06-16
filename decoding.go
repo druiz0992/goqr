@@ -577,8 +577,10 @@ func alphaTuple(data *QRData, ds *datastream, bits, digits int) int {
 	data.Payload = append(data.Payload, make([]uint8, digits)...)
 	payloadLen := len(data.Payload)
 	for i := 0; i < digits; i++ {
-		data.Payload[payloadLen+digits-i-1] = alphaMap[tuple%45]
-		tuple /= 45
+		if payloadLen+digits-i-1 < len(data.Payload) {
+			data.Payload[payloadLen+digits-i-1] = alphaMap[tuple%45]
+			tuple /= 45
+		}
 	}
 	return 0
 }

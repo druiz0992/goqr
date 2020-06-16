@@ -3,7 +3,7 @@ package main
 import (
 	"bytes"
 	"fmt"
-	"github.com/liyue201/goqr"
+	"github.com/druiz0992/goqr"
 	"image"
 	_ "image/jpeg"
 	_ "image/png"
