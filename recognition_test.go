@@ -59,7 +59,7 @@ func TestRecognize(t *testing.T) {
 		},
 		{
 			"example/testdata/006.png",
-			"https://github.com/liyue201",
+			"https://github.com/druiz0992",
 		},
 		{
 			"example/testdata/007.png",
@@ -67,7 +67,7 @@ func TestRecognize(t *testing.T) {
 		},
 		{
 			"example/testdata/008.png",
-			"https://github.com/liyue201/goqr",
+			"https://github.com/druiz0992/goqr",
 		},
 	}
 	for _, testCase := range testCases {
